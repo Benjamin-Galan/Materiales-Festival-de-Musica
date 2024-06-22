@@ -414,3 +414,19 @@ body > section {
 .navegacion-principal a {
   color: #FFFFFF;
 }
+
+.video {
+  position: relative;
+}
+.video .overlay {
+  position: absolute;
+  background: linear-gradient(270deg, rgba(117, 47, 151, 0.6), rgba(57, 23, 73, 0.9));
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+.contenido-video h1 {
+  color: #FFFFFF;
+  font-size: 7rem;
+  margin: 0;
+}
