@@ -374,11 +374,6 @@ body > section {
 .header {
   background-color: #4CB8B3;
 }
-@media (min-width: 768px) {
-  .header {
-    background-color: #752F97;
-  }
-}
 .header .contenido-header {
   padding: 2rem;
 }
@@ -413,6 +408,20 @@ body > section {
 }
 .navegacion-principal a {
   color: #FFFFFF;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-verde {
+  background-color: #4CB8B3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: #5ebfbb;
 }
 
 .video {
@@ -476,4 +485,52 @@ body > section {
   color: #4CB8B3;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3, .lineup .dia {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .dia {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.escenarios-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario .nombre-escenario {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 900;
+}
+.calendario li span {
+  font-weight: 400;
 }
