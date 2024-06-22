@@ -4,10 +4,6 @@
 .header {
     background-color: v.$verde;
 
-    @include m.tablet {
-        background-color: v.$morado;
-    }
-
     .contenido-header {
         padding: 2rem;
 
@@ -41,5 +37,20 @@
 
     a {
         color: v.$blanco;
+    }
+}
+
+//nth child (odd) toma los elementos impares
+.bg-amarillo{
+    background-color: v.$amarillo;
+    li:nth-child(odd){
+        background-color: lighten(v.$amarillo, 5%);
+    }
+}
+
+.bg-verde{
+    background-color: v.$verde;
+    li:nth-child(odd){
+        background-color: lighten(v.$verde, 5%);
     }
 }
